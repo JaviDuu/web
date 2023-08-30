@@ -1,0 +1,87 @@
+<!-- Search Input -->
+<input
+  #msg
+  class="form-control search-input"
+  (keyup.enter)="ver(msg.value)"
+  type="text"
+/>
+
+<!-- Result Container -->
+<ng-container *ngIf="index !== -1; else noexiste">
+  <div class="card p-3 mt-2 result-container">
+    <div class="card-block">
+      <div class="card-title">
+        <p class="result-name">Nombre: {{ datos?.nombre }}</p>
+      </div>
+      <div class="text">
+        <p class="result-bio">Biografía: {{ datos?.bio }}</p>
+      </div>
+      <div class="text">
+        <p class="result-casa">Casa: {{ datos?.casa }}</p>
+      </div>
+      <div class="text">
+        <p class="result-aparicion">
+          <small>Aparición: {{ datos?.aparicion }}</small>
+        </p>
+      </div>
+      <img [src]="datos?.img" class="card-img img-fluid result-image" />
+    </div>
+  </div>
+</ng-container>
+
+<!-- No Result Template -->
+<ng-template #noexiste>
+  <p class="no-result">{{ mensaje }}</p>
+</ng-template>
+
+<style>
+    /* Custom Styles */
+.search-input {
+  border: 1px solid #ce2f2f;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.result-container {
+  background-color: #564141;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.result-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-bio {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-casa {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-aparicion {
+  font-size: 14px;
+  color: #866f6f;
+}
+
+.result-image {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-result {
+  font-size: 18px;
+  color: #4a4242;
+  text-align: center;
+}
+
+</style>

@@ -1,0 +1,13 @@
+.contenedor-reservados {
+    min-height: calc(86vh - 70px);
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+th {
+    background-color: #368986;
+    color: white;
+}

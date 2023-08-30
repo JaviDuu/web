@@ -1,0 +1,19 @@
+<div class="contenedor-reservados">
+    <h2 class="text-dark text-center">Reservaciones</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nombre del encargado</th>
+                <th scope="col">Hora de slida</th>
+                <th scope="col">Día</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let reserva of imprimir">
+                <td>{{ reserva.nombre }}</td>
+                <td>{{ reserva.hora }}</td>
+                <td>{{ reserva.dia }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

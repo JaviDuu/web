@@ -1,0 +1,15 @@
+.contenedor-clima {
+    padding: 15px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.encabezado-tabla {
+    background-color: #002930;
+    color: white;
+}
+
+.temperatura {
+    background-color: #368986;
+    color: white;
+}

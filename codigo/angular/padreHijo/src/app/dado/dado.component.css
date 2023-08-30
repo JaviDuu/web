@@ -1,0 +1,12 @@
+.forma{
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    color: rgb(59, 122, 181);
+    background-color: rgba(91, 29, 192, 0.477);
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

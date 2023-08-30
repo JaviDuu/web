@@ -1,0 +1,40 @@
+<div id="titulo">
+  <h1 class="display-5">binding en una direccion</h1>
+  <h1 class="h5">javier guerrero</h1>
+</div>
+
+<div id="contenedor">
+  <div class="card" style="width: 18rem;">
+    <img src="../assets/imagenes/david.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">David Gilmour</h5>
+      <p class="card-text">nombre: {{user1.nombre}}</p>
+      <p class="card-text">nombre: {{user1.apellido}}</p>
+      <p class="card-text">nombre: {{user1.telefono}}</p>
+      <p class="card-text">nombre: {{user1.correo}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="../assets/imagenes/roder.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Roger Waters</h5>
+      <p class="card-text" [innerHTML]="user2.nombre"></p>
+      <p class="card-text" [innerHTML]="user2.apellido"></p>
+      <p class="card-text" [innerHTML]="user2.telefono"></p>
+      <p class="card-text" [innerHTML]="user2.correo"></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="../assets/imagenes/syd.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Syd Barrett</h5>
+      <p class="card-text">nombre: {{user3.nombre}}</p>
+      <p class="card-text">nombre: {{user3.apellido}}</p>
+      <p class="card-text">nombre: {{user3.telefono}}</p>
+      <p class="card-text">nombre: {{user3.correo}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>

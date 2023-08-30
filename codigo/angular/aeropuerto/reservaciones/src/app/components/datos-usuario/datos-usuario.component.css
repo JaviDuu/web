@@ -1,0 +1,35 @@
+.contenedor-datos {
+    min-height: calc(86vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    padding: 15px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+h2 {
+    width: 80%;
+    background-color: #368986;
+    color: white;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.btn {
+    background-color: #36898650;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #368986;
+    color: white;
+}

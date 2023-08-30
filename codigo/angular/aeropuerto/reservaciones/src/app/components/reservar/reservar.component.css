@@ -1,0 +1,15 @@
+.contenedor-vuelos {
+    margin: 0 auto;
+    width: 85%;
+    padding: 20px;
+    min-height: calc(86vh - 70px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 315px;
+}

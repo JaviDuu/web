@@ -1,0 +1,37 @@
+.calendar {
+	margin: 20px auto;
+	max-width: 600px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+
+thead th {
+	background-color: #555;
+	color: #fff;
+}
+
+tbody td {
+	border: 1px solid #ddd;
+}
+
+tbody td:hover {
+	background-color: #eee;
+}

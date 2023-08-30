@@ -1,0 +1,26 @@
+.contenedor-acercaDe {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    border: 35px solid;
+}
+
+div {
+    display: flex;
+    text-align: center;
+    padding: 5px;
+}
+
+body {
+    padding-top: 50px;
+    text-align: center;
+}

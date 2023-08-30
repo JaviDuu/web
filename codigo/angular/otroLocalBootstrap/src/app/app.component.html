@@ -1,0 +1,53 @@
+<div class="container py-4">
+  <div class="row">
+    <div class="col-6">
+      <h2 class="mb-3">Altas de estudiantes</h2>
+      <h4 class="mb-4">TU nombre aqui</h4>
+      <div class="mb-3">
+        <label for="exampleInput1" class="form-label">Nombre:</label>
+        <input [(ngModel)]="nombre" type="text" class="form-control" id="exampleInput1" required />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInput2" class="form-label">Promedio:</label>
+        <input [(ngModel)]="promedio" type="number" class="form-control" id="exampleInput2" required />
+      </div>
+      <button type="button" (click)="agregarDatos()" class="btn btn-success">
+        Agregar
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div *ngIf="estudiantes.length > 0; else listaVacia">
+        <h5 class="mt-4 mb-3">Lista de estudiantes agregados</h5>
+        <table class="table border border-2 rounded">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Promedio</th>
+              <th scope="col">Eliminación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let estudiante of estudiantes; let i = index">
+              <tr>
+                <th scope="row">{{i + 1}}</th>
+                <td>{{estudiante.nombre}}</td>
+                <td>{{estudiante.promedio}}</td>
+                <td>
+                  <button (click)="eliminarRegistro(estudiante.nombre, $event)" class="btn btn-primary py-0">
+                    Eliminar
+                  </button>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <ng-template #listaVacia>
+    <h5 class="mt-4">No hay estudiantes agregados</h5>
+  </ng-template>
+</div>

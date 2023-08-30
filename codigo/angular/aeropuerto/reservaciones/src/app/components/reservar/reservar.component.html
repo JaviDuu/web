@@ -1,0 +1,40 @@
+<div class="contenedor-vuelos">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="../../../assets/img/manana.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vuelo Matutino</h5>
+                    <p class="card-text">Hora de abordaje 09:00 am, Hora de partida 09:45 am</p>
+                </div>
+                <div class="card-footer">
+                    <button mat-raised-button color="primary" (click)="reservarVuelo('09:00 am')" [routerLink]="['/reservar/confirmar']">Reservar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../../../assets/img/tarde.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vuelo Vespertino</h5>
+                    <p class="card-text">Hora de abordaje 05:00 pm, Hora de partida 05:45 pm</p>
+                </div>
+                <div class="card-footer">
+                    <button mat-raised-button color="primary" (click)="reservarVuelo('05:00 pm')" [routerLink]="['/reservar/confirmar']">Reservar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../../../assets/img/noche.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vuelo Nocturno</h5>
+                    <p class="card-text">Hora de abordaje 09:00 pm, Hora de partida 09:45 pm</p>
+                </div>
+                <div class="card-footer">
+                    <button mat-raised-button color="primary" (click)="reservarVuelo('09:00 pm')" [routerLink]="['/reservar/confirmar']">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

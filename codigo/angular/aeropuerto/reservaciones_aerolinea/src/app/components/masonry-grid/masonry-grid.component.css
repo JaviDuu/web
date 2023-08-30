@@ -1,0 +1,24 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-item {
+    margin: 10px;
+    flex: 1 0 300px;
+}
+
+.gallery-item img {
+    margin: 10px;
+    display: block;
+    width: 100%;
+    height: 180px;
+}
+
+.contenedor-masonry {
+    margin: 0 auto;
+    width: 85%;
+    height: auto;
+}

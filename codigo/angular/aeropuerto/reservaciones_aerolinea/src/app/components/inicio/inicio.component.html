@@ -1,0 +1,91 @@
+<br />
+<div class="contenedor-botones">
+    <button class="btn-material" mat-button [routerLink]="['/login']" mat-stroked-button>
+    Login
+  </button>
+    <button class="btn-material" mat-button [routerLink]="['/registrar']" mat-stroked-button>
+    Registrate!
+  </button>
+    <button class="btn-material" mat-button [routerLink]="['/reservar/calendario']" mat-stroked-button>
+    Reserva
+  </button>
+</div>
+<br />
+
+<div class="contenedor-informacion1">
+    <div class="cuadro-informacion">
+        <video width="500" height="400" autoplay loop>
+      <source src="assets/imagenes/busqueda.mp4" type="video/mp4">
+    </video>
+        <h4>Todos los vuelos en una única busqueda</h4>
+        <p>Encuentra los mejores vuelos a bajos costos.</p>
+    </div>
+    <div class="cuadro-informacion" autoplay loop>
+        <video width="400" height="300">
+      <source src="assets/imagenes/dinero.mp4" type="video/mp4"> </video>
+        <h4>Viaja más y gasta menos </h4>
+        <p>Busca la estrella de los hacks de viaje para ver itinerarios exclusivos.</p>
+    </div>
+    <div class="cuadro-informacion">
+        <video width="300" height="200" autoplay loop>
+      <source src="assets/imagenes/boleto.mp4" type="video/mp4">
+    </video>
+        <h4>Millones de viajeros confían en nosotros</h4>
+        <p>Únete a los más de 10 millones de viajeros que reservan con nosotros.</p>
+    </div>
+</div>
+
+<br><br>
+
+<h1 class="text-center titulo1">Vuelos más populares</h1>
+
+<div class="contenedor-informacion2">
+    <div class="card" style="width: 18rem">
+        <img src="assets/imagenes/madrid.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">Vuelos a Madrid</h5>
+            <p class="card-text">Partiendo desde Ciudad de México. Por Papalote.</p>
+            <span>Sencillo</span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem">
+        <img src="assets/imagenes/buenosaires.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">Vuelos a Buenos Aires</h5>
+            <p class="card-text">Partiendo desde Ciudad de México. Por Papalote.</p>
+            <span>Redondo</span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem">
+        <img src="assets/imagenes/chicago.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">Vuelos a Chicago</h5>
+            <p class="card-text">Partiendo desde Ciudad de México. Por Papalote.</p>
+            <span>Sencillo</span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem">
+        <img src="assets/imagenes/newyork.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">Vuelos a Nueva York</h5>
+            <p class="card-text">Partiendo desde Ciudad de México. Por Papalote.</p>
+            <span>Redondo</span>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<h1 class="text-center titulo2">¿Quieres evitar que te pasen cosas así?</h1>
+<div class="contenedor-video">
+    <br />
+    <iframe width="660" height="415" [src]="video | securityVideo : 'https://www.youtube.com/embed/'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+        allowfullscreen></iframe>
+    <br />
+    <h4>Reserva con nosotros</h4>
+</div>
+
+<br />
+
+<h2 class="text-center titulo3">Galeria de nuestros viajes</h2>
+<app-masonry-grid></app-masonry-grid>
